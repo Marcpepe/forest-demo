@@ -41,4 +41,8 @@ app.use(require('forest-express-sequelize').init({
   sequelize: require('./models').sequelize
 }));
 
+app.get('/', function (req, res) {
+  res.send('This app was successfully created using Forest Admin\'s demo which you can find at <a>https://docs.forestadmin.com/lumber/how-tos/create-and-import-a-database-example</a>')
+})
+
 module.exports = app;
